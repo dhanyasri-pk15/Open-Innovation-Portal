@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Submission Form</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Team Information -->
+        <form id="team-form">
+            <h2>Team Information</h2>
+            <label for="teamLead">TeamLead’s Name*</label>
+            <input type="text" id="teamLead" name="teamLead" placeholder="Name" value="DHANYASRI P K (7376221EC143)" required>
+            <label for="teamLeadEmail">TeamLead’s Email*</label>
+            <input type="email" id="teamLeadEmail" name="teamLeadEmail" value="dhanyasri.ec22@bitsathy.ac.in" required>
+
+            <label for="team-size">Team Size*</label>
+            <input type="number" id="team-size" name="team-size" min="1" max="10" value="2" required>
+            
+            <div id="team-members">
+                <label>Member1 Name:</label>
+                <input type="text" name="member-1-name" placeholder="Enter name of member 1" value="BAVATHARANI S (7376221EC125)" class="member-field">
+                <input type="email" name="member-1-email" value="bavatharani.ec22@bitsathy.ac.in" class="member-field">
+            </div>
+            
+            <label>Member2 Name:</label>
+            <input type="text" placeholder="Name" value="" class="member-field">
+
+            <label>Member3 Name:</label>
+            <input type="text" placeholder="Name" class="member-field">
+
+            <label>Member4 Name:</label>
+            <input type="text" placeholder="Name" class="member-field">
+
+            <h2>Project Details</h2>
+            <label for="title">Title*</label>
+            <input type="text" id="title" name="title" value="Wireless Stethoscope" required>
+
+            <label for="domain">Domain*</label>
+            <select id="domain" name="domain" required>
+                <option value="Hardware" selected>Hardware</option>
+            </select>
+
+            <label for="specialLab">Special Lab*</label>
+            <select id="specialLab" name="specialLab" required>
+                <option value="Communication Protocol" selected>Communication Protocol</option>
+            </select>
+
+            <label for="model">3D Model/Flowchart (JPEG/PNG Format)</label>
+            <input type="file" id="model" name="model" accept="image/jpeg, image/png" value="7376221EC143.jpeg" required>
+
+            <label for="abstract">Abstract (PDF Format)</label>
+            <input type="file" id="abstract" name="abstract" accept="application/pdf" value="7376221EC143.pdf" required>
+
+            <div class="action-buttons">
+                <button type="button" class="approve-button">Approve</button>
+                <button type="button" class="reject-button">Reject</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

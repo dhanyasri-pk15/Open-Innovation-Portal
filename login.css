@@ -1,0 +1,90 @@
+/* General styling for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #79EFFF; /* Background color matching the image */
+}
+
+/* Center the form vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling for the form container */
+.form {
+    width: 320px; /* Adjusted to fit the design */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Background color for the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Styling for the title */
+.form__title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styling for input groups */
+.form__input-group {
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.form__input {
+    width: calc(100% - 20px); /* Adjusted width to fit inside the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Login button styling */
+.form__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3093CB; /* Color matching the image */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form__button:hover {
+    background-color: aqua;
+}
+
+/* Google Sign-In link styling */
+.google_sign_in {
+    margin-top: 15px;
+}
+
+.google_sign_in a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.google_sign_in a:hover {
+    text-decoration: underline;
+}
+
+/* Image container */
+.images {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+}

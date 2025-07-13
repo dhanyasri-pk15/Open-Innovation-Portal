@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Submission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Team Information -->
+        <form id="team-form">
+            <h2>Team Information</h2>
+            <label for="teamLead">TeamLead’s Name*</label>
+            <input type="text" id="teamLead" name="teamLead" placeholder="Name" required>
+            <label for="teamLead">Team Size*</label>
+            <input type="number" id="team-size" name="team-size" min="1" max="10" required>
+            <div id="team-members"></div>
+            <h2>Project Details</h2>
+            <label for="title">Title*</label>
+            <input type="text" id="title" name="title" placeholder="Title" required>
+
+            <label for="domain">Domain*</label>
+            <select id="domain" name="domain" required>
+                <option value="">Choose Domain</option>
+                <option value="domain1">Hardware</option>
+                <option value="domain2">Software</option>
+            </select>
+
+            <label for="specialLab">Special Lab*</label>
+            <select id="specialLab" name="specialLab" required>
+                <option value="">Choose Special Lab</option>
+                <option value="lab1">Communication Protocol</option>
+                <option value="lab2">ICES</option>
+                <option value="lab3">VI Lab</option>
+                <option value="lab4">Industrial IOT</option>
+                <option value="lab5">Datascience</option>
+            </select>
+
+            <label for="model">3D Model/Flowchart (JPEG/PNG Format)</label>
+            <input type="file" id="model" name="model" accept="image/jpeg, image/png" required>
+
+            <label for="abstract">Abstract (PDF Format)</label>
+            <input type="file" id="abstract" name="abstract" accept="application/pdf" required>
+
+            <label for="fileUpload">BOM Submission</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".xls, .xlsx" required>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

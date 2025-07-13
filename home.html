@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Innovation Portal</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Open Innovation Portal</h1>
+        <div class="user-profile">
+            <div class="profile-icon">D</div>
+            <button class="logout-button" onclick="logout()">LOGOUT</button>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link" onclick="showHome()">Home</a></li>
+                <li><a href="register.html" id="register-link">Register</a></li>
+                <li><a href="slot.html" id="slot-booking-link">Slot Booking</a></li>
+                <li><a href="queries.html" id="queries-link">Queries</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-card">
+                <div class="user-info">
+                    <div class="welcome-text">
+                        <p>Welcome back,</p>
+                        <h2>DHANYASRI P K</h2>
+                    </div>
+                </div>
+            </div>
+    <div class="container">
+        <h1>Projects Table</h1>
+        <table id="projectsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Academic Year</th>
+                    <th>Semester</th>
+                    <th>Project Category</th>
+                    <th>Project Title</th>
+                    <th>Domain of the Project</th>
+                    <th>Student</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18930</td>
+                    <td>2023-2024</td>
+                    <td>Even</td>
+                    <td>Software</td>
+                    <td>BIT LINKEDIN</td>
+                    <td>—</td>
+                    <td>DHANYASRI P K (7376221EC143)</td>
+                    <td><button class="view-btn" onclick="viewProjectDetails()">View</button></td>
+                </tr>
+                <!-- Additional rows can be added here -->
+            </tbody>
+        </table>
+
+        <div id="projectDetails" class="details-container hidden">
+            <h2>Project Details</h2>
+            <p><strong>Project Category:</strong> Software</p>
+            <p><strong>Project Title:</strong> BIT LINKEDIN</p>
+            <p><strong>Skills Required for Project Completion:</strong></p>
+            <ul>
+                <li>Front-End/Coding/Programming (Max 500 points)</li>
+                <li>Back-End (Max 500 points)</li>
+                <li>UI-design (Max 500 points)</li>
+            </ul>
+            <p><strong>Number of Students:</strong> 3</p>
+            <p><strong>Student IDs:</strong> 16415 (Back-End), 16419 (Front-End), 16428 (UI-design)</p>
+            <p><strong>Nature of the Work:</strong> Project (Max 1500 points)</p>
+            <p><strong>Submitted under the Category:</strong> Special-lab/PIC-projects</p>
+            <a href="#" class="schedule-link">Project Schedules</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+        <div id="bom-submission-section" style="display: none;">
+            <h2>BOM Submission Section</h2>
+            <!-- Content for BOM Submission Section -->
+        </div>
+        
+        <div id="slot-booking-section" style="display: none;">
+            <h2>Slot Booking Section</h2>
+            <!-- Content for Slot Booking Section -->
+        </div>
+        <div id="queries-section" style="display: none;">
+            <h2>Queries Section</h2>
+            <!-- Content for Queries Section -->
+        </div>
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
